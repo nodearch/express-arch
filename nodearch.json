@@ -1,0 +1,6 @@
+{
+  "extensions": [
+    "mongoose",
+    "mocha"
+  ]
+}

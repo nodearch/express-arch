@@ -1,0 +1,28 @@
+[
+  {
+    "name": "models",
+    "type": "component",
+    "modules": [
+      { "name": "User.js" }
+    ]
+  },
+  {
+    "name": "services",
+    "type": "component"
+  },
+  {
+    "name": "controllers",
+    "type": "component",
+    "modules": [
+    ]
+  },
+  {
+    "name": "routes.js",
+    "type": "module"
+  },
+  {
+    "name": "test",
+    "type": "component",
+    "disable": true
+  }
+]
