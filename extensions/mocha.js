@@ -4,7 +4,7 @@ const Mocha = require('mocha');
 const path = require('path');
 const _ = require('lodash');
 
-const { paths, deps, fs, ENV, config } = require('nodearch');
+const { paths, deps, fs, env, config } = require('nodearch');
 
 const mocha = new Mocha(getOptions());
 
@@ -36,7 +36,7 @@ module.exports = {
 
     const runEnv = _.get(config, 'mocha.env') || 'test';
 
-    if (ENV === runEnv) {
+    if (env === runEnv) {
       await addTests();
 
       mocha.run(function (failures) {

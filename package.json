@@ -10,7 +10,7 @@
     "http-errors": "^1.6.3",
     "jade": "^1.11.0",
     "lodash": "^4.17.10",
-    "mongoose": "^4.13.12",
+    "mongoose": "^5.0.16",
     "morgan": "^1.9.0",
     "nodearch": "^1.0.1"
   },
