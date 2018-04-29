@@ -12,7 +12,7 @@
     "lodash": "^4.17.10",
     "mongoose": "^5.0.16",
     "morgan": "^1.9.0",
-    "nodearch": "^1.0.1"
+    "nodearch": "^1.0.3"
   },
   "devDependencies": {
     "chai": "^4.1.2",
