@@ -24,11 +24,11 @@ function onError(error) {
 
   switch (error.code) {
     case "EACCES":
-      arch.log.error(`port ${port} requires elevated privileges`);
+      arch.logger.error(`port ${port} requires elevated privileges`);
       process.exit(1);
       break;
     case "EADDRINUSE":
-      arch.log.error(`port ${port} is already in use`);
+      arch.logger.error(`port ${port} is already in use`);
       process.exit(1);
       break;
     default:
@@ -38,7 +38,7 @@ function onError(error) {
 
 function onListening() {
   const addr = server.address();
-  arch.log.info(`Server running at: ${addr.address ? 'http://' + addr.address + ':' : ''}${addr.port}`);
+  arch.logger.info(`Server running at: ${addr.address ? 'http://' + addr.address + ':' : ''}${addr.port}`);
 }
 
 

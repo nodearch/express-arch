@@ -4,7 +4,7 @@ const _ = require('lodash');
 const mongoose = require('mongoose'); 
 mongoose.Promise = Promise;
 
-const { config, log } = require('nodearch');
+const { config, logger } = require('nodearch');
 
 
 module.exports = {
@@ -28,7 +28,7 @@ module.exports = {
       db.on('error', (err) => reject(err));
 
       db.once('open', () => {
-        log.info('Connected To MongoDB');
+        logger.info('Connected To MongoDB');
         return resolve(db);
       });
 
